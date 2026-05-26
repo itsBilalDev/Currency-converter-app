@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="container">
+        <div class="heading">
+            <h1>CURRENCY CONVERTER</h1>
+            <button class="btn" onclick="togglemood()">Dark Mood</button>
+        </div>
+        
+        <div class="converter">
+        <div class="box">
+            <!--FROM CURRENCY
+            -->
+           <label>FROM</label>
+           <select id="fromcurrency">
+            <option value="USD">USD</option>
+            <option value="PKR">PKR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+             </select>
+             <input type="number" id="amount" placeholder="ENTER AMOUNT">
+             </div>
+        <button id="swap"><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+          
+        <!--to currency-->
+        <div class="box">
+            <label>TO</label>
+             <select id="tocurrency">
+            <option value="USD">USD</option>
+            <option value="PKR">PKR</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="INR">INR</option>
+             </select>
+             <input type="text" id="result"  placeholder="Result" readonly>
+        </div>
+        <button id="convertbtn">Convert Now</button>
+        </div>
+    <p class="rateinfo"></p>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
